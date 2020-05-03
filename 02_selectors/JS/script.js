@@ -8,3 +8,4 @@ console.log(allBySelector,firstBySelector);
 byId.innerHTML = "<h2>Hello i am a div</h2>"
 firstBySelector.innerHTML = "<h2>Hello i am firstBySelector</h2>"
 const quest = prompt("Цто хотите написать на странице ?");
+byId.innerHTML =quest
