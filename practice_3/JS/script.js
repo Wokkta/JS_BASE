@@ -14,5 +14,7 @@
 
      const shortBio = document.getElementsByClassName('shortBio');
      shortBio.innerHTML = text;
+     page.innerHTML = text;
      shortBio.className += ' animated'; 
      console.log(shortBio);
+     
