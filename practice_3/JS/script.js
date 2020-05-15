@@ -4,6 +4,7 @@
  const img_adress = prompt('Введите адрес картинки');
  const text = prompt('Введите текст страницы');
  const page = document.getElementsByClassName('page');
-document.body.style.backgroundColor = background;
-document.body.shortBio.innerHTML = text;
+const shortBio = document.getElementsByClassName('shortBio');
+document.body.style.backgroundColor = background
+shortBio.innerHTML =text
 document.body.style.backgroundColor = text_color;
