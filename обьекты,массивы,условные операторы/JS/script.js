@@ -16,7 +16,7 @@ const object = {
 }
 console.log(object.first_parametr)
 object.func('trully')
-*/
+*//*
 class Person {
 	static type = "Human"
 	constructor(options){
@@ -33,4 +33,22 @@ const human = new Person({
 	age:10,
 	height:165
 })
-console.log(human)
+console.log(human)*/
+class User {
+	constructor(data){
+		this.name = data.name
+		 this.id = data.id
+		 this.voice = function(){
+		 	return('my name is '+this.name +" my id is "+this.id)
+		 }
+	}
+}
+let user = new User({
+	name: 'Steve',
+	id:12345
+})
+console.log(user)
+class User_bot extends User{}
+let bot = new User_bot({
+	
+})
