@@ -35,20 +35,27 @@ const human = new Person({
 })
 console.log(human)*/
 class User {
-	constructor(data){
-		this.name = data.name
-		 this.id = data.id
+	constructor(options){
+		this.name = options.name
+		 this.id = options.id
 		 this.voice = function(){
-		 	return('my name is '+this.name +" my id is "+this.id)
+		 	console.log('my name is '+this.name +" my id is "+this.id)
 		 }
 	}
 }
-let user = new User({
+/*let user = new User({
 	name: 'Steve',
 	id:12345
 })
 console.log(user)
-class User_bot extends User{}
-let bot = new User_bot({
-	
-})
+*/class User_bot extends User{
+	constructor(options){
+		super(options)
+		this.bot_log = options.bot_log
+		this.bot_call = function(){
+			
+			console.log(this.name +" is a bot")
+		}
+	}
+}
+/*super - link to mother class*/
