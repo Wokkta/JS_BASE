@@ -38,10 +38,11 @@ class User {
 	constructor(options){
 		this.name = options.name
 		 this.id = options.id
-		 this.voice = function(){
+		}
+	voice = function(){
 		 	console.log('my name is '+this.name +" my id is "+this.id)
 		 }
-	}
+	
 }
 /*let user = new User({
 	name: 'Steve',
@@ -53,9 +54,33 @@ console.log(user)
 		super(options)
 		this.bot_log = options.bot_log
 		this.bot_call = function(){
-			
-			console.log(this.name +" is a bot")
+			return(this.name +" is a bot")
 		}
+	}
+	voice(){
+		super.voice()
+		console.log(this.name +" is a bot")
+	}
+	get name_info(){
+		return this.name + ' is  user'
+	}
+	set name_info_set(new_name){
+		this.name = new_name
 	}
 }
 /*super - link to mother class*/
+ class Component{
+ 	constructor(selector){
+ 		this.$el = document.querySelector(selector)
+
+ 	}
+ 	hide(){
+ 		this.$el.style.display = 'none'
+ 	}
+ 	show(){
+ 		this.$el.style.display ='block'	
+ 	}
+ 	change(type){
+ 		this.$el.style.display = type
+ 	}
+ }
