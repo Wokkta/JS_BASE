@@ -6,9 +6,9 @@
  const page = document.getElementsByClassName('page')
 const shortBio = document.querySelector('.shortBio')
 document.body.style.backgroundColor = background
-const person_div = querySelector('.name')
+const person_div = document.querySelector('.name')
 person_div.innerHTML = person
-const image = getElementsByTagName('img')
+const image = document.getElementsByTagName('img')
 image.setAttribute('src',img_adress)
 shortBio.innerHTML =text
 document.body.style.color = text_color

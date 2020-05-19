@@ -81,6 +81,22 @@ console.log(user)
  		this.$el.style.display ='block'	
  	}
  	change(type){
- 		this.$el.style.display = type
+ 		this.$el.style.backgroundColor = type
  	}
  }
+ class Box extends Component{
+ 	constructor(options){
+ 		super(options.selector)
+ 		this.$el.style.width = this.$el.style.height =options.size +'px'
+ 		this.$el.style.backgroundColor = options.color
+ 	}
+ 	set bgc (new_bgc){
+ 		this.$el.style.backgroundColor = new_bgc
+ 	}
+
+ }
+ const box1 = new Box({
+ 	selector: '#box1',
+ 	size: 100,
+ 	color:'red'
+ })
