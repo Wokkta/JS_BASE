@@ -8,8 +8,8 @@ const shortBio = document.querySelector('.shortBio')
 document.body.style.backgroundColor = background
 const person_div = document.querySelector('.name')
 person_div.innerHTML = person
-const image = document.getElementsByTagName('img')
-image.setAttribute('src',img_adress)
 shortBio.innerHTML =text
 document.body.style.color = text_color
+let a = document.getElementById("img")
 
+a.srcset = "img_adress"

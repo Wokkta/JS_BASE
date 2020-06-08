@@ -100,3 +100,5 @@ console.log(user)
  	size: 100,
  	color:'red'
  })
+let x_one = prompt('x_one')
+console.log(x_one)
