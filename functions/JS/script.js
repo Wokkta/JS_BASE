@@ -1,5 +1,4 @@
 function Hello(name){
-	return 'Hello ' + y
+	return 'Hello ' + name
 }
-let y = prompt('name')
-document.body.innerHTML = (Hello(y))
+document.body.innerHTML = Hello(prompt('name'))
