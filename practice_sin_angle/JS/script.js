@@ -3,5 +3,5 @@ const insert = document.querySelector('.total');
 console.log(form)
 form.onsubmit = (e)=>{
 	e.preventDefault();
-	insert.innerHTML = form.elements.quantility.value*form.elements.price.value
+	insert.innerHTML = form.elements.quantility.value*Math.sin(form.elements.price.value)
 }
