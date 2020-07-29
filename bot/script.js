@@ -12,7 +12,7 @@ const bot = new Botact({
 });
 
 bot.on(function(ctx){
-	console.log(ctx.body);
+	console.log(ctx.body );
 	
 })
 
