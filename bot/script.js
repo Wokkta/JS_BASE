@@ -7,8 +7,8 @@ const { Botact } = require('botact');
 const server = express();
 
 const bot = new Botact({
-	token: '220adb7dacfafd93738b592ebb1e3cc8bf8f0df42b40bcb199dd0174d993676145a2120a8ce1ed960a23c',
-	confirmation: 'e299dd84'
+	token: 'none',
+	confirmation: 'none'
 });
 
 bot.on(function(ctx){
