@@ -1,6 +1,16 @@
+const APIKey ='cc0fdd4b8c2f8c50d12262eed669fcf4'
+
+
+
+
+
+
+
+
+
+
 
 var icon = document.querySelector('.icon');
-const APIKey ='cc0fdd4b8c2f8c50d12262eed669fcf4'
 const city = 'Москва'
 const url = 'https://api.openweathermap.org/data/2.5/weather?q='+city+'&appid='+APIKey+'';
 	let xhr = new XMLHttpRequest();
@@ -12,6 +22,12 @@ else{
 let DATA = JSON.parse(xhr.responseText);
 console.log(DATA);
 console.log('hi');
+let Temp = DATA.main.temp - 273;
+if(Temp > 15) {
+				return this.happiness = this.happiness+1
+			}else {
+				return this.happiness
+			}
 
 }
 class Person {
@@ -56,16 +72,16 @@ form.onsubmit = function(e){
 
 
 	if (Human.happiness == 4){
-	icon.innerHtml = '😄'
+	icon.innerHtml = '&#128513'
 }
 else {
 	// everything is ok there
 	if(Human.happiness ==3 || Human.happiness ==2){
-		icon.innerHtml ='😐'
+		icon.innerHtml ='&#128528'
 	}
 	else{
 		// everything is ok there
-		icon.innerHtml ='☹️'
+		icon.innerHtml ='&#128577'
 	}
 }
 	

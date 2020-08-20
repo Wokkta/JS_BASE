@@ -7,12 +7,12 @@ const { Botact } = require('botact');
 const server = express();
 
 const bot = new Botact({
-	token: 'none',
-	confirmation: 'none'
+	token: '220adb7dacfafd93738b592ebb1e3cc8bf8f0df42b40bcb199dd0174d993676145a2120a8ce1ed960a23c',
+	confirmation: 'd75be06b'
 });
 
 bot.on(function(ctx){
-	console.log(ctx.body );
+	console.log(ctx.body);
 	
 })
 
@@ -22,9 +22,11 @@ bot.event('group_join', ({ reply }) => {
 })
 bot.command('start',(ctx)=>{
 	ctx.reply('started ok')
+	console.log(ctx.body);
 })
 bot.command('time',(ctx)=>{
 	ctx.reply('no time to die')
+	console.log(ctx.body);
 })
 bot.command('время',function(ctx){
 	const date = new Date()
@@ -33,6 +35,7 @@ bot.command('время',function(ctx){
 	const s = date.getSeconds()
 	const time = 'Now is '+ h+':'+m+':'+s
 	ctx.reply(time)
+	console.log(ctx.body);
 })
 server.use(bodyParser.json())
 
