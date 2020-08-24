@@ -23,11 +23,8 @@ window.addEventListener('load', function() {
 				let DATA = JSON.parse(xhr.responseText);
 				let Temp = DATA.main.temp - 273;
 
-				if(Temp > 15) {
-					return this.happiness = this.happiness+1
-				}else {
-					return this.happiness
-				}
+				if(Temp > 15) {return this.happiness = this.happiness+1}
+				else {return this.happiness}
 }}
 const form = document.forms[0];
 form.onsubmit = function(e){
@@ -52,8 +49,6 @@ else if(Human.happiness ==3 || Human.happiness ==2){
 	else{
 		// everything is ok there
 		icon.innerHtml ='&#128577';
-	}
-
-	
+	}	
 }
 })
