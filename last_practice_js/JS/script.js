@@ -1,5 +1,5 @@
 
-var icon = document.querySelector('.icon');
+
 window.addEventListener('load', function() {
 	class Person {
 		constructor(name){
@@ -39,7 +39,7 @@ form.onsubmit = function(e){
 	if (form.elements.rest.value == 'yes'){Human.hasRest()}
 	if (form.elements.money.value =='yes'){Human.hasMoney()}
 	Human.isSunny()
-
+	var icon = document.querySelector('.icon');
 	if (Human.happiness == 4){
 	icon.innerHtml = '&#128513';
 }
