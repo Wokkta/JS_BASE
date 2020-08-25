@@ -30,14 +30,13 @@ form.onsubmit = function(e){
 	e.preventDefault();
 	var Human = new Person(form.elements.name.value);
 	let userName = document.querySelector('.personName')
-	let icon = document.querySelector('.icon')
+	let icon = document.querySelector('.icon');
 	userName.innerHTML = form.elements.name.value;
 
 	if(form.elements.cat.value == 'yes'){Human.hasCat()}
 	if (form.elements.rest.value == 'yes'){Human.hasRest()}
 	if (form.elements.money.value =='yes'){Human.hasMoney()}
 	Human.isSunny()
-	var icon = document.querySelector('.icon');
 	if (Human.happiness == 4){
 	icon.innerHtml = '&#128513';
 }
