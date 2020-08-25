@@ -1,5 +1,3 @@
-
-
 window.addEventListener('load', function() {
 	class Person {
 		constructor(name){
@@ -25,11 +23,11 @@ window.addEventListener('load', function() {
 
 				if(Temp > 15) {return this.happiness = this.happiness+1}
 				else {return this.happiness}
-}}
+}
+}
 const form = document.forms[0];
 form.onsubmit = function(e){
 	e.preventDefault();
-	// everything is ok there
 	var Human = new Person(form.elements.name.value);
 	let userName = document.querySelector('.personName')
 	let icon = document.querySelector('.icon')
@@ -47,7 +45,6 @@ else if(Human.happiness ==3 || Human.happiness ==2){
 		icon.innerHtml ='&#128528';
 	}
 	else{
-		// everything is ok there
 		icon.innerHtml ='&#128577';
 	}	
 }
