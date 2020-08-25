@@ -31,6 +31,7 @@ form.onsubmit = function(e){
 	var Human = new Person(form.elements.name.value);
 	let userName = document.querySelector('.personName')
 	let icon = document.querySelector('.icon');
+	console.log('ok')
 	userName.innerHTML = form.elements.name.value;
 
 	if(form.elements.cat.value == 'yes'){Human.hasCat()}

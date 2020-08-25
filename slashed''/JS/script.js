@@ -1,0 +1,1 @@
+console.log(`${window.location}  is so damm`)
