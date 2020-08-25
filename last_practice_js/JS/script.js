@@ -40,11 +40,7 @@ form.onsubmit = function(e){
 	if (Human.happiness == 4){
 	icon.innerHtml = '&#128513';
 }
-else if(Human.happiness ==3 || Human.happiness ==2){
-		icon.innerHtml ='&#128528';
-	}
-	else{
-		icon.innerHtml ='&#128577';
-	}	
+else if(Human.happiness ==3 || Human.happiness ==2){icon.innerHtml ='&#128528';}
+	else{icon.innerHtml ='&#128577';}	
 }
 })
