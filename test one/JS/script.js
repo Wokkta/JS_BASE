@@ -14,3 +14,7 @@ const quest = prompt("Цто хотите написать на странице
 //console.log(parseFloat('100.19 add ' ))
 const dom = document
 console.log(dom.body) 
+div = document.querySelector('div')
+console.log(div.style)
+color = 'black'
+div.style.backgroundColor = `${color}`
